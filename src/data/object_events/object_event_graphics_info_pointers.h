@@ -77,7 +77,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Storyteller;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Giddy;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvilleOldMan1;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvilleOldMan2;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedNatuDoll;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LilacPresent;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMagnemiteDoll;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedSquirtleDoll;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedWooperDoll;
@@ -297,7 +297,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_GIDDY] =                     &gObjectEventGraphicsInfo_Giddy,
     [OBJ_EVENT_GFX_UNUSED_MAUVILLE_OLD_MAN_1] = &gObjectEventGraphicsInfo_UnusedMauvilleOldMan1,
     [OBJ_EVENT_GFX_UNUSED_MAUVILLE_OLD_MAN_2] = &gObjectEventGraphicsInfo_UnusedMauvilleOldMan2,
-    [OBJ_EVENT_GFX_UNUSED_NATU_DOLL] =          &gObjectEventGraphicsInfo_UnusedNatuDoll,
+    [OBJ_EVENT_GFX_LILAC_PRESENT] =             &gObjectEventGraphicsInfo_LilacPresent,
     [OBJ_EVENT_GFX_UNUSED_MAGNEMITE_DOLL] =     &gObjectEventGraphicsInfo_UnusedMagnemiteDoll,
     [OBJ_EVENT_GFX_UNUSED_SQUIRTLE_DOLL] =      &gObjectEventGraphicsInfo_UnusedSquirtleDoll,
     [OBJ_EVENT_GFX_UNUSED_WOOPER_DOLL] =        &gObjectEventGraphicsInfo_UnusedWooperDoll,

@@ -212,3 +212,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_Bookshelf:: @ 8152ED9
 LittlerootTown_ProfessorBirchsLab_EventScript_Book:: @ 8152EE2
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_BookTooHardToRead, MSGBOX_SIGN
 	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_BirthdayPresent::
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_BirthdayPresent, MSGBOX_SIGN
+	end

@@ -40,7 +40,8 @@ LittlerootTown_ProfessorBirchsLab_Text_LikeYouToHavePokemon:: @ 8173D94
 	.string "of a wonderful bond.\p"
 	.string "As thanks for rescuing me, and as a\n"
 	.string "little birthday welcome to HOENN,\l"
-	.string "I'd like you to have that POKEMON.\p"
+	.string "I'd like you to have\l"
+	.string "that JIGGLYPUFF.\p"
 	.string "{PLAYER} received the {STR_VAR_1}!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_WhyNotGiveNicknameToMon:: @ 8173EF8
@@ -162,3 +163,9 @@ LittlerootTown_ProfessorBirchsLab_Text_CrammedWithBooksOnPokemon:: @ 8174724
 
 LittlerootTown_ProfessorBirchsLab_Text_BookTooHardToRead:: @ 8174748
 	.string "It's a book that's too hard to read.$"
+
+LittlerootTown_ProfessorBirchsLab_Text_BirthdayPresent::
+	.string "A small present wrapped\n"
+	.string "in lilac paper.\p"
+	.string "There is a tag with {PLAYER}'s name\n"
+	.string "written on it.$"

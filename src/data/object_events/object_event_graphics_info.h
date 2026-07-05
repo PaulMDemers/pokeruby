@@ -1442,7 +1442,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvilleOldM
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedNatuDoll = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LilacPresent = {
     .tileTag = 0xffff,
     .paletteTag = 0x1105,
     .bridgeReflectionPaletteTag = 0x11ff,
@@ -1457,7 +1457,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedNatuDoll = {
     .oam = &gFieldOamData_16x16,
     .subspriteTables = gObjectEventSubspriteTables_16x16,
     .anims = gObjectEventImageAnimTable_Inanimate,
-    .images = gObjectEventPicTable_UnusedNatuDoll,
+    .images = gObjectEventPicTable_LilacPresent,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 

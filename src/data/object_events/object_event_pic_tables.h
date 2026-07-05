@@ -850,8 +850,8 @@ const struct SpriteFrameImage gObjectEventPicTable_MauvilleOldMan2[] = {
     overworld_frame(gObjectEventPic_MauvilleOldMan2, 2, 4, 8)
 };
 
-const struct SpriteFrameImage gObjectEventPicTable_UnusedNatuDoll[] = {
-    overworld_frame(gObjectEventPic_UnusedNatuDoll, 2, 2, 0)
+const struct SpriteFrameImage gObjectEventPicTable_LilacPresent[] = {
+    overworld_frame(gObjectEventPic_LilacPresent, 2, 2, 0)
 };
 
 const struct SpriteFrameImage gObjectEventPicTable_UnusedMagnemiteDoll[] = {

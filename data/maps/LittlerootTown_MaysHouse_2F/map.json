@@ -194,7 +194,7 @@
       "flag": "FLAG_HIDE_MOM_UPSTAIRS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_PICHU_DOLL",
+      "graphics_id": "OBJ_EVENT_GFX_JIGGLYPUFF_DOLL",
       "x": 3,
       "y": 4,
       "elevation": 4,
@@ -204,7 +204,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_HIDE_MAY_PICHU_DOLL"
+      "flag": "0"
     }
   ],
   "warp_events": [

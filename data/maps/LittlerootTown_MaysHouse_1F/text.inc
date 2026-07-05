@@ -6,8 +6,8 @@ RivalsHouse_1F_Text_OhYoureTheNewNeighbor:: @ 81730C2
 	.string "neighbor! Hi!\p"
 	.string "We have a {STR_VAR_1} about the same\n"
 	.string "age as you.\p"
-	.string "Our {STR_VAR_1} was excited about making\n"
-	.string "a new friend.\p"
+	.string "Our {STR_VAR_1} has been helping with\n"
+	.string "a special errand for PROF. BIRCH.\p"
 	.string "Our {STR_VAR_1} is upstairs, I think.$"
 
 RivalsHouse_1F_Text_RivalIsUpstairsIThink:: @ 81731C6
@@ -16,7 +16,7 @@ RivalsHouse_1F_Text_RivalIsUpstairsIThink:: @ 81731C6
 RivalsHouse_1F_Text_WhereHasHusbandGone:: @ 81731E3
 	.string "Where has my husband gone?\n"
 	.string "Just when {PLAYER}{KUN} is visiting, too...\p"
-	.string "That man can never sit still for long...\n"
+	.string "That man can never sit still for long.\n"
 	.string "He might be at his LAB.$"
 
 RivalsHouse_1F_Text_WentOutSomewhere:: @ 8173262
@@ -26,7 +26,7 @@ RivalsHouse_1F_Text_WentOutSomewhere:: @ 8173262
 
 RivalsHouse_1F_Text_ShouldGoHomeEverySoOften:: @ 81732B9
 	.string "I think it's wonderful for people to\n"
-	.string "travel with POKéMON.\p"
+	.string "travel with POKEMON.\p"
 	.string "But you should go home every so often\n"
 	.string "to let your mother know you're okay.\p"
 	.string "She might not say it, but I'm sure she\n"

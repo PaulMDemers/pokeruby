@@ -3,14 +3,14 @@ PlayersHouse_1F_Text_IsntItNiceInHere:: @ 8172429
 	.string "Isn't it nice in here, too?$"
 
 PlayersHouse_1F_Text_MoversPokemonGoSetClock:: @ 8172453
-	.string "The mover's POKéMON do all the work\n"
+	.string "The mover's POKEMON did all the work\n"
 	.string "of moving us in and cleaning up after.\l"
 	.string "This is so convenient!\p"
 	.string "{PLAYER}, your room is upstairs.\n"
 	.string "Go check it out, dear!\p"
-	.string "DAD bought you a new clock to mark\n"
-	.string "our move here.\l"
-	.string "Don't forget to set it!$"
+	.string "I unpacked a little birthday surprise\n"
+	.string "for you, too.\l"
+	.string "Don't forget to set your clock!$"
 
 PlayersHouse_1F_Text_ArentYouInterestedInRoom:: @ 8172531
 	.string "MOM: Well, {PLAYER}?\p"
@@ -39,7 +39,8 @@ PlayersHouse_1F_Text_GoIntroduceYourselfNextDoor:: @ 8172644
 	.string "One of DAD's friends lives in town.\p"
 	.string "PROF. BIRCH is his name.\p"
 	.string "He lives right next door, so you should\n"
-	.string "go over and introduce yourself.$"
+	.string "go over and introduce yourself.\p"
+	.string "He sounded very excited about today.$"
 
 PlayersHouse_1F_Text_SeeYouHoney:: @ 81726D2
 	.string "MOM: See you, honey!$"
@@ -77,17 +78,17 @@ PlayersHouse_1F_Text_ReportFromPetalburgGym:: @ 8172841
 
 PlayersHouse_1F_Text_TheresAMovieOnTV: @ 817288C
 	.string "There is a movie on TV.\p"
-	.string "Two men are dancing on a big piano\n"
-	.string "keyboard.\p"
+	.string "A pink POKEMON is singing on a small\n"
+	.string "stage under lilac lights.\p"
 	.string "Better get going!$"
 
 UnknownString_81728E3: @ 81728E3
 	.string "It's the instruction booklet for the\n"
 	.string "RUNNING SHOES.\p"
-	.string "“Press the B Button to run while\n"
+	.string "Press the B Button to run while\n"
 	.string "wearing your RUNNING SHOES.\p"
-	.string "“Lace up your RUNNING SHOES and hit\n"
-	.string "the road running!”$"
+	.string "Lace up your RUNNING SHOES and hit\n"
+	.string "the road running!$"
 
 PlayersHouse_1F_Text_TicketFromBrineyCameForYou:: @ 817298B
 	.string "DAD: Hm?\p"
@@ -117,14 +118,14 @@ PlayersHouse_1F_Text_BetterGetBackToGym:: @ 8172B5E
 PlayersHouse_1F_Text_DadShouldStayLonger:: @ 8172BBC
 	.string "MOM: That DAD of yours...\p"
 	.string "He comes home for the first time in a\n"
-	.string "while, but all he talks about is POKéMON.\p"
+	.string "while, but all he talks about POKEMON.\p"
 	.string "He should relax and stay a little longer.$"
 
 UnknownString_8172C50: @ 8172C50
 	.string "We bring you a special news bulletin.\p"
 	.string "We've received reports of a blue FLYING\n"
-	.string "POKéMON in various HOENN locales.\p"
-	.string "The identity of this POKéMON has not\n"
+	.string "POKEMON in various HOENN locales.\p"
+	.string "The identity of this POKEMON has not\n"
 	.string "yet been determined.\p"
 	.string "We now return you to your regular\n"
 	.string "movie presentation.$"
@@ -132,8 +133,8 @@ UnknownString_8172C50: @ 8172C50
 UnknownString_8172D30: @ 8172D30
 	.string "We bring you a special news bulletin.\p"
 	.string "We've received reports of a red FLYING\n"
-	.string "POKéMON in various HOENN locales.\p"
-	.string "The identity of this POKéMON has not\n"
+	.string "POKEMON in various HOENN locales.\p"
+	.string "The identity of this POKEMON has not\n"
 	.string "yet been determined.\p"
 	.string "We now return you to your regular\n"
 	.string "movie presentation.$"

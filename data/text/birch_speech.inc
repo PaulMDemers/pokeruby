@@ -14,8 +14,8 @@ gBirchSpeech_WorldInhabitedByPokemon:: @ 81C6E1A
 	.string "Every journey has its own color.\n"
 	.string "This one begins in lilac.\p"
 	.string "Some POKEMON run beside us.\n"
-	.string "Some help us work.\l"
-	.string "Some sing when words are not enough.\p"
+	.string "Some help us work. Some sing\l"
+	.string "when words are not enough.\p"
 	.string "Today, a special partner is waiting\n"
 	.string "for someone with a brave heart.\p"
 	.string "To understand bonds like that,\n"
@@ -39,12 +39,12 @@ gBirchSpeech_SoItsPlayer:: @ 81C7017
 gBirchSpeech_AhOkayYouArePlayer:: @ 81C7025
 	.string "Ah, okay!\p"
 	.string "You're {PLAYER}{KUN}, the one moving\n"
-	.string "to my hometown of LITTLEROOT today.\l"
+	.string "to my hometown of LITTLEROOT.\l"
 	.string "I get it now!$"
 
 gBirchSpeech_AreYouReady:: @ 81C7074
 	.string "All right, are you ready?\p"
-	.string "Your very own lilac-colored adventure\n"
+	.string "Your very own adventure\n"
 	.string "is about to unfold.\p"
 	.string "Take courage, and leap into the\n"
 	.string "world of POKEMON where dreams,\l"

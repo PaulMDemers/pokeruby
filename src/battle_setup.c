@@ -7,6 +7,7 @@
 #include "constants/items.h"
 #include "constants/map_types.h"
 #include "constants/maps.h"
+#include "constants/moves.h"
 #include "constants/opponents.h"
 #include "constants/songs.h"
 #include "constants/species.h"
@@ -24,6 +25,7 @@
 #include "metatile_behavior.h"
 #include "overworld.h"
 #include "palette.h"
+#include "pokemon.h"
 #include "random.h"
 #include "safari_zone.h"
 #include "script.h"
@@ -875,6 +877,7 @@ static void CB2_GiveStarter(void)
     *GetVarPointer(VAR_STARTER_MON) = gSpecialVar_Result;
     starterPoke = GetStarterPokemon(gSpecialVar_Result);
     ScriptGiveMon(starterPoke, 5, ITEM_NONE, 0, 0, 0);
+    GiveMoveToMon(&gPlayerParty[0], MOVE_POUND);
     ResetTasks();
     sub_80408BC();
     SetMainCallback2(CB2_StartFirstBattle);

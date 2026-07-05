@@ -83,11 +83,6 @@ static void Task_NewGameSpeech10(u8 taskId);
 static void Task_NewGameSpeech11(u8 taskId);
 static void Task_NewGameSpeech12(u8 taskId);
 static void Task_NewGameSpeech13(u8 taskId);
-static void Task_NewGameSpeech14(u8 taskId);
-static void Task_NewGameSpeech15(u8 taskId);
-static void Task_NewGameSpeech16(u8 taskId);
-static void Task_NewGameSpeech17(u8 taskId);
-static void Task_NewGameSpeech18(u8 taskId);
 static void Task_NewGameSpeech19(u8 taskId);
 static void Task_NewGameSpeech20(u8 taskId);
 static void Task_NewGameSpeech21(u8 taskId);
@@ -116,8 +111,6 @@ static void HandleFloorShadowFadeOut(u8 taskId);
 static void StartBackgroundFadeOut(u8 taskId, u8 interval);
 static void HandleFloorShadowFadeIn(u8 taskId);
 static void StartBackgroundFadeIn(u8 taskId, u8 interval);
-static void CreateGenderMenu(u8 left, u8 top);
-static s8 GenderMenuProcessInput(void);
 static void CreateNameMenu(u8 left, u8 top);
 static s8 NameMenuProcessInput(void);
 static void SetPresetPlayerName(u8 index);
@@ -142,12 +135,6 @@ static const union AffineAnimCmd gSpriteAffineAnim_81E799C[] =
 static const union AffineAnimCmd *const gSpriteAffineAnimTable_81E79AC[] =
 {
     gSpriteAffineAnim_81E799C,
-};
-
-static const struct MenuAction gUnknown_081E79B0[] =
-{
-    {gBirchText_Boy, NULL},
-    {gBirchText_Girl, NULL},
 };
 
 static const struct MenuAction gMalePresetNames[] =
@@ -925,15 +912,16 @@ static void Task_NewGameSpeech12(u8 taskId)
         }
         else
         {
-            //Initialize Brendan sprite
-            u8 spriteId = gTasks[taskId].tBrendanSpriteId;
+            // Lilac always starts as the girl player.
+            u8 spriteId = gTasks[taskId].tMaySpriteId;
 
             gSprites[spriteId].x = 180;
             gSprites[spriteId].y = 60;
             gSprites[spriteId].invisible = FALSE;
             gSprites[spriteId].oam.objMode = ST_OAM_OBJ_BLEND;
             gTasks[taskId].tTrainerSpriteId = spriteId;
-            gTasks[taskId].tGenderSelection = 0;
+            gTasks[taskId].tGenderSelection = FEMALE;
+            gSaveBlock2.playerGender = FEMALE;
             StartSpriteFadeIn(taskId, 2);
             StartBackgroundFadeIn(taskId, 1);
             gTasks[taskId].func = Task_NewGameSpeech13;
@@ -946,107 +934,7 @@ static void Task_NewGameSpeech13(u8 taskId)
     if (gTasks[taskId].tSubtaskIsDone)
     {
         gSprites[gTasks[taskId].tTrainerSpriteId].oam.objMode = ST_OAM_OBJ_NORMAL;
-        gTasks[taskId].func = Task_NewGameSpeech14;
-    }
-}
-
-static void Task_NewGameSpeech14(u8 taskId)
-{
-    Menu_DrawStdWindowFrame(2, 13, 27, 18);
-    //"Are you a boy? Or are you a girl?"
-    MenuPrintMessage(gBirchSpeech_AreYouBoyOrGirl, 3, 14);
-    gTasks[taskId].func = Task_NewGameSpeech15;
-}
-
-static void Task_NewGameSpeech15(u8 taskId)
-{
-    if (BirchSpeechUpdateWindowText())
-    {
-        CreateGenderMenu(2, 4);
-        gTasks[taskId].func = Task_NewGameSpeech16;
-    }
-}
-
-//Process gender menu
-static void Task_NewGameSpeech16(u8 taskId)
-{
-    u8 cursorPos;
-
-    switch (GenderMenuProcessInput())
-    {
-    case MALE:
-        Menu_DestroyCursor();
-        PlaySE(SE_SELECT);
-        gSaveBlock2.playerGender = MALE;
-        Menu_EraseWindowRect(2, 4, 8, 9);
         gTasks[taskId].func = Task_NewGameSpeech19;
-        break;
-    case FEMALE:
-        Menu_DestroyCursor();
-        PlaySE(SE_SELECT);
-        gSaveBlock2.playerGender = FEMALE;
-        Menu_EraseWindowRect(2, 4, 8, 9);
-        gTasks[taskId].func = Task_NewGameSpeech19;
-        break;
-    }
-
-    cursorPos = Menu_GetCursorPos();
-
-    if (cursorPos != gTasks[taskId].tGenderSelection)
-    {
-        //Menu selection changed. Slide Brendan or May out and slide the other in
-        gTasks[taskId].tGenderSelection = cursorPos;
-        gSprites[gTasks[taskId].tTrainerSpriteId].oam.objMode = ST_OAM_OBJ_BLEND;
-        StartSpriteFadeOut(taskId, 0);
-        gTasks[taskId].func = Task_NewGameSpeech17;
-    }
-}
-
-//Slide old trainer sprite off right of screen
-static void Task_NewGameSpeech17(u8 taskId)
-{
-    u8 spriteId = gTasks[taskId].tTrainerSpriteId;
-
-    if (gTasks[taskId].tSubtaskIsDone == FALSE)
-    {
-        gSprites[spriteId].x += 4;     //Move sprite right
-    }
-    else
-    {
-        gSprites[spriteId].invisible = TRUE;
-
-        //Set up new trainer sprite
-        if (gTasks[taskId].tGenderSelection)
-            spriteId = gTasks[taskId].tMaySpriteId;
-        else
-            spriteId = gTasks[taskId].tBrendanSpriteId;
-        gSprites[spriteId].x = 240;
-        gSprites[spriteId].y = 60;
-        gSprites[spriteId].invisible = FALSE;
-        gTasks[taskId].tTrainerSpriteId = spriteId;
-        gSprites[spriteId].oam.objMode = ST_OAM_OBJ_BLEND;
-        StartSpriteFadeIn(taskId, 0);
-        gTasks[taskId].func = Task_NewGameSpeech18;
-    }
-}
-
-//Slide new trainer sprite from right of screen
-static void Task_NewGameSpeech18(u8 taskId)
-{
-    u8 spriteId = gTasks[taskId].tTrainerSpriteId;
-
-    if (gSprites[spriteId].x > 180)
-    {
-        gSprites[spriteId].x -= 4;     //Move sprite left
-    }
-    else
-    {
-        gSprites[spriteId].x = 180;
-        if (gTasks[taskId].tSubtaskIsDone)
-        {
-            gSprites[spriteId].oam.objMode = ST_OAM_OBJ_NORMAL;
-            gTasks[taskId].func = Task_NewGameSpeech16; //Go back to gender menu
-        }
     }
 }
 
@@ -1093,7 +981,7 @@ static void Task_NewGameSpeech21(u8 taskId)
         Menu_DestroyCursor();
         PlaySE(SE_SELECT);
         Menu_EraseWindowRect(2, 1, 22, 12);
-        gTasks[taskId].func = Task_NewGameSpeech14;     //Go back to gender menu
+        gTasks[taskId].func = Task_NewGameSpeech19;     //Go back to name prompt
         break;
     }
 }
@@ -1143,7 +1031,7 @@ static void Task_NewGameSpeech25(u8 taskId)
     case 1:     //NO
         PlaySE(SE_SELECT);
         Menu_EraseWindowRect(2, 1, 8, 7);
-        gTasks[taskId].func = Task_NewGameSpeech14;     //Go back to gender menu
+        gTasks[taskId].func = Task_NewGameSpeech19;     //Go back to name prompt
         break;
     }
 }
@@ -1647,21 +1535,6 @@ static void StartBackgroundFadeIn(u8 taskId, u8 interval)
 #undef tDelay
 #undef tUpdateInterval
 #undef tFrameCounter
-
-static void CreateGenderMenu(u8 left, u8 top)
-{
-    u8 menuLeft, menuTop;
-    Menu_DrawStdWindowFrame(left, top, left + 6, top + 5);
-    menuLeft = left + 1;
-    menuTop = top + 1;
-    Menu_PrintItems(menuLeft, menuTop, 2, gUnknown_081E79B0);
-    InitMenu(0, menuLeft, menuTop, 2, 0, 5);
-}
-
-static s8 GenderMenuProcessInput(void)
-{
-    return Menu_ProcessInputNoWrap();
-}
 
 static void CreateNameMenu(u8 left, u8 top)
 {

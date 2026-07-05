@@ -411,12 +411,12 @@ MauvilleCity_GameCorner_EventScript_GiveTreeckoDoll:: @ 8156FDB
 	end
 
 MauvilleCity_GameCorner_EventScript_GiveTorchicDoll:: @ 8157005
-	bufferdecorationname 1, DECOR_TORCHIC_DOLL
-	checkdecorspace DECOR_TORCHIC_DOLL
+	bufferdecorationname 1, DECOR_JIGGLYPUFF_DOLL
+	checkdecorspace DECOR_JIGGLYPUFF_DOLL
 	compare VAR_RESULT, 0
 	goto_if_eq MauvilleCity_GameCorner_EventScript_NoRoomForStarterDoll
 	msgbox MauvilleCity_GameCorner_Text_HereYouGo2, MSGBOX_DEFAULT
-	givedecoration DECOR_TORCHIC_DOLL
+	givedecoration DECOR_JIGGLYPUFF_DOLL
 	setflag FLAG_RECEIVED_STARTER_DOLL
 	goto MauvilleCity_GameCorner_EventScript_ReceivedStarterDoll
 	end

@@ -54,22 +54,22 @@ const u8 gBirchText_Girl[] = _("GIRL");
 const u8 gBirchText_NewName[] = _("NEW NAME");
 
 #ifdef SAPPHIRE
-const u8 gDefaultBoyName1[] = _("SEAN");
+const u8 gDefaultBoyName1[] = _("ASTER");
 #else
-const u8 gDefaultBoyName1[] = _("LANDON");
+const u8 gDefaultBoyName1[] = _("ASTER");
 #endif
-const u8 gDefaultBoyName2[] = _("TERRY");
-const u8 gDefaultBoyName3[] = _("SETH");
-const u8 gDefaultBoyName4[] = _("TOM");
+const u8 gDefaultBoyName2[] = _("BASIL");
+const u8 gDefaultBoyName3[] = _("ORRIS");
+const u8 gDefaultBoyName4[] = _("CEDAR");
 
 #ifdef SAPPHIRE
-const u8 gDefaultGirlName1[] = _("MARINA");
+const u8 gDefaultGirlName1[] = _("Lizzy");
 #else
-const u8 gDefaultGirlName1[] = _("TERRA");
+const u8 gDefaultGirlName1[] = _("Lizzy");
 #endif
-const u8 gDefaultGirlName2[] = _("KIMMY");
-const u8 gDefaultGirlName3[] = _("NICOLA");
-const u8 gDefaultGirlName4[] = _("SARA");
+const u8 gDefaultGirlName2[] = _("Liz");
+const u8 gDefaultGirlName3[] = _("Lilac");
+const u8 gDefaultGirlName4[] = _("May");
 
 const u8 gSystemText_IntroWeCall[] = _("This is what we call\na POKéMON.");
 const u8 gSystemText_NewPara[] = _("\p");
@@ -145,7 +145,7 @@ const u8 gOtherText_Level3[] = _("Lv. ");
 const u8 gOtherText_IDNumber[] = _("IDNo. /");
 const u8 gOtherText_Name[] = _("NAME /");
 const u8 gOtherText_IDNumber2[] = _("IDNo. /");
-const u8 gOtherText_BirchInTrouble[] = _("{HIGHLIGHT WHITE2}{COLOR DARK_GREY}PROF. BIRCH is in trouble!\nRelease a POKéMON and rescue him!");
+const u8 gOtherText_BirchInTrouble[] = _("{HIGHLIGHT WHITE2}{COLOR DARK_GREY}PROF. BIRCH is in trouble!\nRelease JIGGLYPUFF and rescue him!");
 const u8 gOtherText_DoYouChoosePoke[] = _("{HIGHLIGHT WHITE2}{COLOR DARK_GREY}Do you choose this POKéMON?");
 const u8 gOtherText_Poke[] = _("POKéMON");
 

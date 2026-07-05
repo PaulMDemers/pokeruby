@@ -1,6 +1,6 @@
 gBirchSpeech_Welcome:: @ 81C6D78
 	.string "Hi! Sorry to keep you waiting!\p"
-	.string "Welcome to the world of POKéMON!\p"
+	.string "Welcome to POKEMON LILAC!\p"
 	.string "My name is BIRCH.\p"
 	.string "But everyone calls me the POKéMON\n"
 	.string "PROFESSOR.\p$"
@@ -11,6 +11,8 @@ gBirchSpeech_ThisIsPokemon:: @ 81C6DF8
 gBirchSpeech_WorldInhabitedByPokemon:: @ 81C6E1A
 	.string "This world is widely inhabited by\n"
 	.string "creatures known as POKéMON.\p"
+	.string "Every journey has its own color.\n"
+	.string "This one begins in lilac.\p"
 	.string "We humans live alongside POKéMON,\n"
 	.string "at times as friendly playmates, and\l"
 	.string "at times as cooperative workmates.\p"

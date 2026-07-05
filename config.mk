@@ -15,7 +15,7 @@ MAKER_CODE  := 01
 # Version
 ifeq ($(GAME_VERSION), RUBY)
   BUILD_NAME := ruby
-  TITLE      := POKEMON RUBY
+  TITLE      := POKEMONLILAC
   GAME_CODE  := AXV
 else
 ifeq ($(GAME_VERSION), SAPPHIRE)
@@ -75,4 +75,3 @@ ifeq ($(MODERN), 0)
 else
   BUILD_NAME := $(BUILD_NAME)_modern
 endif
-

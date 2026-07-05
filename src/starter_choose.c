@@ -47,7 +47,7 @@ static const u8 gStarterChoose_LabelCoords[][2] =
     {16, 10},
     {8, 4},
 };
-static const u16 sStarterMons[] = {SPECIES_TREECKO, SPECIES_TORCHIC, SPECIES_MUDKIP};
+static const u16 sStarterMons[] = {SPECIES_JIGGLYPUFF, SPECIES_JIGGLYPUFF, SPECIES_JIGGLYPUFF};
 static const struct OamData gOamData_83F76CC =
 {
     .y = 160,
@@ -240,8 +240,8 @@ static u8 CreatePokemonFrontSprite(u16, u8, u8);
 //Retrieves one of the available starter Pokemon
 u16 GetStarterPokemon(u16 n)
 {
-    if (n > 3)
-        n = 0;
+    if (n > 2)
+        n = 1;
     return sStarterMons[n];
 }
 
@@ -326,22 +326,12 @@ void CB2_ChooseStarter(void)
     spriteId = CreateSprite(&gSpriteTemplate_83F77CC, 120, 56, 2);
     gSprites[spriteId].data[0] = taskId;
 
-    //Create three Pokeball sprites
-    spriteId = CreateSprite(
-      &gSpriteTemplate_83F77E4,
-      gStarterChoose_PokeballCoords[0][0], gStarterChoose_PokeballCoords[0][1], 2);
-    gSprites[spriteId].data[0] = taskId;
-    gSprites[spriteId].data[1] = 0;
+    //Create the Jigglypuff Pokeball sprite
     spriteId = CreateSprite(
       &gSpriteTemplate_83F77E4,
       gStarterChoose_PokeballCoords[1][0], gStarterChoose_PokeballCoords[1][1], 2);
     gSprites[spriteId].data[0] = taskId;
     gSprites[spriteId].data[1] = 1;
-    spriteId = CreateSprite(
-      &gSpriteTemplate_83F77E4,
-      gStarterChoose_PokeballCoords[2][0], gStarterChoose_PokeballCoords[2][1], 2);
-    gSprites[spriteId].data[0] = taskId;
-    gSprites[spriteId].data[1] = 2;
 }
 
 static void MainCallback2(void)
@@ -396,19 +386,6 @@ static void Task_StarterChoose2(u8 taskId)
 
         gTasks[taskId].func = Task_StarterChoose3;
     }
-    else
-    {
-        if (JOY_NEW(DPAD_LEFT) && selection > 0)
-        {
-            gTasks[taskId].tStarterSelection--;
-            CreateStarterPokemonLabel(selection, gTasks[taskId].tStarterSelection);
-        }
-        else if (JOY_NEW(DPAD_RIGHT) && selection < 2)
-        {
-            gTasks[taskId].tStarterSelection++;
-            CreateStarterPokemonLabel(selection, gTasks[taskId].tStarterSelection);
-        }
-    }
 }
 
 static void Task_StarterChoose3(u8 taskId)
@@ -439,7 +416,7 @@ static void Task_StarterChoose5(u8 taskId)
     {
     case 0:  // YES
         //Return the starter choice and exit.
-        gSpecialVar_Result = gTasks[taskId].tStarterSelection;
+        gSpecialVar_Result = 1;
         SetMainCallback2(gMain.savedCallback);
         break;
     case 1:  // NO

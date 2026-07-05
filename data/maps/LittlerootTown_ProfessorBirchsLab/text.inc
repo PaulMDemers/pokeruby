@@ -169,3 +169,13 @@ LittlerootTown_ProfessorBirchsLab_Text_BirthdayPresent::
 	.string "in lilac paper.\p"
 	.string "There is a tag with {PLAYER}'s name\n"
 	.string "written on it.$"
+
+LittlerootTown_ProfessorBirchsLab_Text_OpenBirthdayPresent::
+	.string "PROF. BIRCH: Before you go...\p"
+	.string "That lilac present is for you.\n"
+	.string "Go on, open it.$"
+
+LittlerootTown_ProfessorBirchsLab_Text_PuzzlePieceKeepIt::
+	.string "PROF. BIRCH: That's the missing\n"
+	.string "piece.\p"
+	.string "Keep it with you, okay?$"

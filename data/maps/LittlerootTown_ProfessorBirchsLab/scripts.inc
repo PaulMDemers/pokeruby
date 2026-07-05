@@ -117,6 +117,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_GivePokedex:: @ 8152DBA
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_HeardYouBeatRivalTakePokedex, MSGBOX_DEFAULT
 	call LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedex
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_ExplainPokedex, MSGBOX_DEFAULT
+	call LittlerootTown_ProfessorBirchsLab_EventScript_OpenBirthdayPresent
 	applymovement 3, LittlerootTown_ProfessorBirchsLab_Movement_RivalApproachPlayer
 	waitmovement 0
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFastestRight
@@ -158,6 +159,15 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedex:: @ 8152E6D
 	waitfanfare
 	waitmessage
 	setflag FLAG_SYS_POKEDEX_GET
+	return
+
+LittlerootTown_ProfessorBirchsLab_EventScript_OpenBirthdayPresent::
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_OpenBirthdayPresent, MSGBOX_DEFAULT
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFastestLeft
+	waitmovement 0
+	giveitem ITEM_PUZZLE_PIECE
+	removeobject 4
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_PuzzlePieceKeepIt, MSGBOX_DEFAULT
 	return
 
 LittlerootTown_ProfessorBirchsLab_EventScript_PokemonAwait:: @ 8152E7B

@@ -174,6 +174,7 @@ const u16 gObjectEventPalette22[] = INCBIN_U16("graphics/object_events/palettes/
 const u16 gObjectEventPalette23[] = INCBIN_U16("graphics/object_events/palettes/23.gbapal");
 const u16 gObjectEventPalette24[] = INCBIN_U16("graphics/object_events/palettes/24.gbapal");
 const u16 gObjectEventPalette25[] = INCBIN_U16("graphics/object_events/palettes/25.gbapal");
+const u16 gObjectEventPalette27[] = INCBIN_U16("graphics/object_events/palettes/27.gbapal");
 const u32 gObjectEventPic_LilacPresent[] = INCBIN_U32("graphics/object_events/pics/dolls/lilac_present.4bpp");
 const u32 gObjectEventPic_UnusedMagnemiteDoll[] = INCBIN_U32("graphics/object_events/pics/dolls/unused_magnemite_doll.4bpp");
 const u32 gObjectEventPic_UnusedSquirtleDoll[] = INCBIN_U32("graphics/object_events/pics/dolls/unused_squirtle_doll.4bpp");

@@ -1444,7 +1444,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvilleOldM
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LilacPresent = {
     .tileTag = 0xffff,
-    .paletteTag = 0x1105,
+    .paletteTag = 0x111B,
     .bridgeReflectionPaletteTag = 0x11ff,
     .size = 128,
     .width = 16,

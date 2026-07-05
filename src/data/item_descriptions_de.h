@@ -995,6 +995,10 @@ static const u8 gItemDescription_ContestPass[] = _(
     "nahme an POKéMON- \n"
     "WETTBEWERBEN.");
 
+static const u8 gItemDescription_PuzzlePiece[] = _(
+    "The missing piece.\n"
+    "Keep it with you.");
+
 static const u8 gItemDescription_WailmerPail[] = _(
     "Ein Gegenstand zum\n"
     "Gießen von Pflan-\n"

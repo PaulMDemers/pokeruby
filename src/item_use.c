@@ -71,6 +71,8 @@ static const u8 *const sSSTidalBetaStrings[] =
     gSSTidalBetaString2,
 };
 
+static const u8 sPuzzlePieceUseText[] = _("It fits perfectly.");
+
 static const MainCallback gExitToOverworldFuncList[] =
 {
     sub_808B020,
@@ -636,6 +638,19 @@ void ItemUseOutOfBattle_SSTicket(u8 taskId)
     else
     {
         DisplayItemMessageOnField(taskId, sSSTidalBetaStrings[ItemId_GetSecondaryId(gSpecialVar_ItemId)], SSTicketWaitForAButtonPress2, 0);
+    }
+}
+
+void ItemUseOutOfBattle_PuzzlePiece(u8 taskId)
+{
+    if (gTasks[taskId].data[2] == 0)
+    {
+        Menu_EraseWindowRect(0, 13, 13, 20);
+        DisplayItemMessageOnField(taskId, sPuzzlePieceUseText, CleanUpItemMenuMessage, 1);
+    }
+    else
+    {
+        DisplayItemMessageOnField(taskId, sPuzzlePieceUseText, CleanUpOverworldMessage, 0);
     }
 }
 

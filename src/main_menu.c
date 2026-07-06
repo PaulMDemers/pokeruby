@@ -842,9 +842,9 @@ static void Task_NewGameSpeech7(u8 taskId)
     if (gTasks[taskId].tFrameCounter < 16384)
     {
         gTasks[taskId].tFrameCounter++;
-        //Play Azurill cry at frame 32
+        //Play Igglybuff cry at frame 32
         if (gTasks[taskId].tFrameCounter == 32)
-            PlayCry_Normal(SPECIES_AZURILL, 0);
+            PlayCry_Normal(SPECIES_IGGLYBUFF, 0);
     }
 }
 
@@ -863,9 +863,6 @@ static void Task_NewGameSpeech9(u8 taskId)
 {
     if (BirchSpeechUpdateWindowText())
     {
-        Menu_DrawStdWindowFrame(2, 13, 27, 18);
-        //"And you are?"
-        MenuPrintMessage(gBirchSpeech_AndYouAre, 3, 14);
         gTasks[taskId].func = Task_NewGameSpeech10;
     }
 }
@@ -1309,14 +1306,14 @@ void ShrinkPlayerSprite(struct Sprite *sprite)
 u8 CreateAzurillSprite(u8 x, u8 y)
 {
     DecompressPicFromTable_2(
-        &gMonFrontPicTable[SPECIES_AZURILL],
-        gMonFrontPicCoords[SPECIES_AZURILL].coords,
-        gMonFrontPicCoords[SPECIES_AZURILL].y_offset,
+        &gMonFrontPicTable[SPECIES_IGGLYBUFF],
+        gMonFrontPicCoords[SPECIES_IGGLYBUFF].coords,
+        gMonFrontPicCoords[SPECIES_IGGLYBUFF].y_offset,
         gMonSpriteGfx_Sprite_ptr[0],
         gMonSpriteGfx_Sprite_ptr[1],
-        SPECIES_AZURILL);
-    LoadCompressedObjectPalette(&gMonPaletteTable[SPECIES_AZURILL]);
-    SetMultiuseSpriteTemplateToPokemon(SPECIES_AZURILL, 1);
+        SPECIES_IGGLYBUFF);
+    LoadCompressedObjectPalette(&gMonPaletteTable[SPECIES_IGGLYBUFF]);
+    SetMultiuseSpriteTemplateToPokemon(SPECIES_IGGLYBUFF, 1);
     return CreateSprite(&gCreatingSpriteTemplate, x, y, 0);
 }
 

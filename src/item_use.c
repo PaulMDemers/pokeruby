@@ -646,11 +646,11 @@ void ItemUseOutOfBattle_PuzzlePiece(u8 taskId)
     if (gTasks[taskId].data[2] == 0)
     {
         Menu_EraseWindowRect(0, 13, 13, 20);
-        DisplayItemMessageOnField(taskId, sPuzzlePieceUseText, CleanUpItemMenuMessage, 1);
+        DisplayItemMessageOnField(taskId, sPuzzlePieceUseText, SSTicketWaitForAButtonPress, 1);
     }
     else
     {
-        DisplayItemMessageOnField(taskId, sPuzzlePieceUseText, CleanUpOverworldMessage, 0);
+        DisplayItemMessageOnField(taskId, sPuzzlePieceUseText, SSTicketWaitForAButtonPress2, 0);
     }
 }
 

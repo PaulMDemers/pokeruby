@@ -333,8 +333,8 @@ static const struct CompressedSpriteSheet sPokemonLogoShineSpriteSheet[] =
 //Red Kyogre markings
 #define LEGENDARY_MARKING_COLOR(c) RGB((c), 0, 0)
 #else
-//Blue Groundon markings
-#define LEGENDARY_MARKING_COLOR(c) RGB(0, 0, (c))
+//Lilac Jigglypuff highlights
+#define LEGENDARY_MARKING_COLOR(c) RGB((c), ((c) >> 1), (c))
 #endif
 
 #if defined(GERMAN) && defined(SAPPHIRE)
@@ -811,4 +811,3 @@ static void UpdateLegendaryMarkingColor(u8 frameNum)
         LoadPalette(&palette, 0xEF, sizeof(palette));
    }
 }
-

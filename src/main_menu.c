@@ -727,7 +727,7 @@ static void Task_NewGameSpeech1(u8 taskId)
     gTasks[taskId].func = Task_NewGameSpeech2;
     gTasks[taskId].tTrainerSpriteId = 0xFF;
     gTasks[taskId].data[3] = 0xFF;
-    gTasks[taskId].tFrameCounter = 216;  //Wait 3.6 seconds (216 frames) before starting speech
+    gTasks[taskId].tFrameCounter = 90;  // Wait 1.5 seconds before starting speech.
 
     PlayBGM(MUS_ROUTE122);
 }
@@ -747,8 +747,8 @@ static void Task_NewGameSpeech2(u8 taskId)
         gSprites[spriteId].y = 60;
         gSprites[spriteId].invisible = FALSE;
         gSprites[spriteId].oam.objMode = ST_OAM_OBJ_BLEND;
-        StartSpriteFadeIn(taskId, 10);
-        StartBackgroundFadeIn(taskId, 20);
+        StartSpriteFadeIn(taskId, 4);
+        StartBackgroundFadeIn(taskId, 8);
         gTasks[taskId].tFrameCounter = 80;
         gTasks[taskId].func = Task_NewGameSpeech3;
     }

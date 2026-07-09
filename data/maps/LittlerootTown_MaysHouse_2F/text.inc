@@ -70,3 +70,16 @@ RivalsHouse_2F_Text_BrendanWhereShouldIGoNext:: @ 81739CC
 
 UnknownString_8173A76: @ 8173A76
 	.string "It's lined with POKEMON picture books.$"
+
+LittlerootTown_MaysHouse_2F_Text_DespereauxBook::
+	.string "The Tale Of Despereaux\p"
+	.string "Chapter One\n"
+	.string "the last one\p"
+	.string "THIS STORY BEGINS within the\n"
+	.string "walls of a castle, with the\l"
+	.string "birth of a mouse.\p"
+	.string "A small mouse. The last mouse\n"
+	.string "born to his parents, and the\l"
+	.string "only one of his litter to be\l"
+	.string "born alive...\p"
+	.string "{PLAYER} closes the book carefully.$"

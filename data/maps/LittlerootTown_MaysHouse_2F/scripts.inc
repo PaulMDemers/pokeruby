@@ -217,3 +217,7 @@ gMayHouse_TurnPCOff:: @ 8152C75
 	special DoPCTurnOffEffect
 	releaseall
 	end
+
+LittlerootTown_MaysHouse_2F_EventScript_DespereauxBook::
+	msgbox LittlerootTown_MaysHouse_2F_Text_DespereauxBook, MSGBOX_SIGN
+	end

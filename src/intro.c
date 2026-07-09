@@ -946,7 +946,7 @@ void CB2_InitCopyrightScreenAfterTitleScreen(void)
 void Task_IntroLoadPart1Graphics(u8 taskId)
 {
     SetVBlankCallback(NULL);
-    gUnknown_02039318 = Random() & 1;
+    gUnknown_02039318 = 1;
     intro_reset_and_hide_bgs();
     REG_BG3VOFS = 0;
     REG_BG2VOFS = 0x50;

@@ -293,3 +293,66 @@ u32 ProgramFlashSectorAndVerifyNBytes(u16 sectorNum, void *dataSrc, u32 n)
 
     return result;
 }
+
+#if SRAM_SAVE
+#define SRAM_SAVE_SECTOR_COUNT 32
+
+u16 EraseFlashChip_SRAM(void)
+{
+    u32 i;
+    vu8 *dest = FLASH_BASE;
+
+    REG_WAITCNT = (REG_WAITCNT & ~WAITCNT_SRAM_MASK) | WAITCNT_SRAM_8;
+
+    for (i = 0; i < FLASH_ROM_SIZE_1M; i++)
+        dest[i] = 0xFF;
+
+    return 0;
+}
+
+u16 EraseFlashSector_SRAM(u16 sectorNum)
+{
+    u32 i;
+    vu8 *dest;
+
+    if (sectorNum >= SRAM_SAVE_SECTOR_COUNT)
+        return 0x80FF;
+
+    REG_WAITCNT = (REG_WAITCNT & ~WAITCNT_SRAM_MASK) | WAITCNT_SRAM_8;
+
+    dest = FLASH_BASE + (sectorNum << 12);
+    for (i = 0; i < 0x1000; i++)
+        dest[i] = 0xFF;
+
+    return 0;
+}
+
+u16 ProgramFlashByte_SRAM(u16 sectorNum, u32 offset, u8 data)
+{
+    if (sectorNum >= SRAM_SAVE_SECTOR_COUNT || offset >= 0x1000)
+        return 0x8000;
+
+    REG_WAITCNT = (REG_WAITCNT & ~WAITCNT_SRAM_MASK) | WAITCNT_SRAM_8;
+    ((vu8 *)FLASH_BASE)[(sectorNum << 12) + offset] = data;
+
+    return 0;
+}
+
+u16 ProgramFlashSector_SRAM(u16 sectorNum, void *src)
+{
+    u32 i;
+    u8 *src8 = src;
+    vu8 *dest;
+
+    if (sectorNum >= SRAM_SAVE_SECTOR_COUNT)
+        return 0x80FF;
+
+    REG_WAITCNT = (REG_WAITCNT & ~WAITCNT_SRAM_MASK) | WAITCNT_SRAM_8;
+
+    dest = FLASH_BASE + (sectorNum << 12);
+    for (i = 0; i < 0x1000; i++)
+        dest[i] = src8[i];
+
+    return 0;
+}
+#endif

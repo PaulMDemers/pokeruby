@@ -1,7 +1,11 @@
 #include "gba/gba.h"
 #include "gba/flash_internal.h"
 
+#if SRAM_SAVE
+static const char AgbLibFlashVersion[] = "SRAM_V113";
+#else
 static const char AgbLibFlashVersion[] = "FLASH1M_V103";
+#endif
 
 const struct FlashSetupInfo * const sSetupInfos[] =
 {
@@ -12,6 +16,37 @@ const struct FlashSetupInfo * const sSetupInfos[] =
 
 u16 IdentifyFlash(void)
 {
+#if SRAM_SAVE
+    static const u16 sSramMaxTime[] =
+    {
+        0, 0, 0,
+        0, 0, 0,
+        0, 0, 0,
+        0, 0, 0,
+    };
+    static const struct FlashType sSramFlashType =
+    {
+        0, // Do not use Flash bank switching on SRAM carts.
+        {
+            4096,
+              12,
+              32,
+               0
+        },
+        { 3, 1 },
+        { { 0x00, 0x00 } }
+    };
+
+    ProgramFlashByte = ProgramFlashByte_SRAM;
+    ProgramFlashSector = ProgramFlashSector_SRAM;
+    EraseFlashChip = EraseFlashChip_SRAM;
+    EraseFlashSector = EraseFlashSector_SRAM;
+    WaitForFlashWrite = WaitForFlashWrite_Common;
+    gFlashMaxTime = sSramMaxTime;
+    gFlash = &sSramFlashType;
+
+    return 0;
+#else
     u16 result;
     u16 flashId;
     const struct FlashSetupInfo * const *setupInfo;
@@ -46,6 +81,7 @@ u16 IdentifyFlash(void)
     gFlash = &(*setupInfo)->type;
 
     return result;
+#endif
 }
 
 u16 WaitForFlashWrite_Common(u8 phase, u8 *addr, u8 lastData)

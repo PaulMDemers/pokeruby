@@ -77,6 +77,11 @@ u16 EraseFlashSector_MX(u16 sectorNum);
 u16 ProgramFlashByte_MX(u16 sectorNum, u32 offset, u8 data);
 u16 ProgramFlashSector_MX(u16 sectorNum, void *src);
 
+u16 EraseFlashChip_SRAM(void);
+u16 EraseFlashSector_SRAM(u16 sectorNum);
+u16 ProgramFlashByte_SRAM(u16 sectorNum, u32 offset, u8 data);
+u16 ProgramFlashSector_SRAM(u16 sectorNum, void *src);
+
 // agb_flash_1m
 u16 IdentifyFlash(void);
 

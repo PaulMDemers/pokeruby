@@ -8,6 +8,7 @@ DEBUG         ?= 0
 MODERN        ?= 0
 DEBUG_FIX     ?= 0
 COMPARE       ?= 0
+SRAM_SAVE     ?= 0
 
 # For gbafix
 MAKER_CODE  := 01
@@ -74,4 +75,10 @@ ifeq ($(MODERN), 0)
   BUILD_NAME := $(BUILD_NAME)
 else
   BUILD_NAME := $(BUILD_NAME)_modern
+endif
+
+# SRAM save patch for repro/flash carts that expose 128 KiB SRAM instead of
+# Ruby/Sapphire's stock 1M Flash save chip.
+ifeq ($(SRAM_SAVE), 1)
+  BUILD_NAME := $(BUILD_NAME)_sram
 endif

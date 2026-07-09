@@ -91,8 +91,8 @@ JSONPROC  := tools/jsonproc/jsonproc$(EXE)
 
 PERL := perl
 
-ASFLAGS  := -mcpu=arm7tdmi -I include --defsym $(GAME_VERSION)=1 --defsym REVISION=$(GAME_REVISION) --defsym DEBUG_FIX=$(DEBUG_FIX) --defsym $(GAME_LANGUAGE)=1 --defsym DEBUG=$(DEBUG) --defsym MODERN=$(MODERN)
-CPPFLAGS := -iquote include -Werror -Wno-trigraphs -D $(GAME_VERSION) -D REVISION=$(GAME_REVISION) -D $(GAME_LANGUAGE) -D=DEBUG_FIX$(DEBUG_FIX) -D DEBUG=$(DEBUG) -D MODERN=$(MODERN)
+ASFLAGS  := -mcpu=arm7tdmi -I include --defsym $(GAME_VERSION)=1 --defsym REVISION=$(GAME_REVISION) --defsym DEBUG_FIX=$(DEBUG_FIX) --defsym $(GAME_LANGUAGE)=1 --defsym DEBUG=$(DEBUG) --defsym MODERN=$(MODERN) --defsym SRAM_SAVE=$(SRAM_SAVE)
+CPPFLAGS := -iquote include -Werror -Wno-trigraphs -D $(GAME_VERSION) -D REVISION=$(GAME_REVISION) -D $(GAME_LANGUAGE) -D=DEBUG_FIX$(DEBUG_FIX) -D DEBUG=$(DEBUG) -D MODERN=$(MODERN) -D SRAM_SAVE=$(SRAM_SAVE)
 ifeq ($(MODERN),0)
 CPPFLAGS += -I tools/agbcc/include -nostdinc -undef
 CC1FLAGS := -g -mthumb-interwork -Wimplicit -Wparentheses -Wunused -Werror -O2 -fhex-asm
@@ -161,7 +161,7 @@ endif
 
 #### Main Rules ####
 
-ALL_BUILDS := ruby ruby_debug ruby_rev1 ruby_rev2 sapphire sapphire_debug sapphire_rev1 sapphire_rev2 ruby_de ruby_de_debug ruby_de_rev1 sapphire_de sapphire_de_debug sapphire_de_rev1
+ALL_BUILDS := ruby ruby_sram ruby_debug ruby_rev1 ruby_rev2 sapphire sapphire_debug sapphire_rev1 sapphire_rev2 ruby_de ruby_de_debug ruby_de_rev1 sapphire_de sapphire_de_debug sapphire_de_rev1
 MODERN_BUILDS := $(ALL_BUILDS:%=%_modern)
 
 # Available targets
@@ -258,6 +258,7 @@ $(BUILD_DIR)/%.o: %.s $$(ASM_DEP)
 
 # "friendly" target names for convenience sake
 ruby:              ; @$(MAKE) GAME_VERSION=RUBY
+ruby_sram:         ; @$(MAKE) GAME_VERSION=RUBY SRAM_SAVE=1
 ruby_debug:        ; @$(MAKE) GAME_VERSION=RUBY DEBUG=1
 ruby_rev1:         ; @$(MAKE) GAME_VERSION=RUBY GAME_REVISION=1
 ruby_rev2:         ; @$(MAKE) GAME_VERSION=RUBY GAME_REVISION=2

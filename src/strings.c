@@ -69,7 +69,7 @@ const u8 gDefaultGirlName1[] = _("Lizzy");
 #endif
 const u8 gDefaultGirlName2[] = _("Liz");
 const u8 gDefaultGirlName3[] = _("Lilac");
-const u8 gDefaultGirlName4[] = _("May");
+const u8 gDefaultGirlName4[] = _("Carlena");
 
 const u8 gSystemText_IntroWeCall[] = _("This is what we call\na POKéMON.");
 const u8 gSystemText_NewPara[] = _("\p");

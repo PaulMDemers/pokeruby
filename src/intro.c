@@ -2221,7 +2221,7 @@ static void sub_813DE70(struct Sprite *sprite)
         r5 = gSprites[sprite->data[6]].x + gSprites[sprite->data[6]].x2;
         r4 = gSprites[sprite->data[6]].y + gSprites[sprite->data[6]].y2;
         DestroySprite(&gSprites[sprite->data[6]]);
-        sprite->data[6] = sub_813CE88(SPECIES_TORCHIC, r5, r4, 2, 1);
+        sprite->data[6] = sub_813CE88(SPECIES_IGGLYBUFF, r5, r4, 2, 1);
         gSprites[sprite->data[6]].callback = sub_813DD58;
         gSprites[sprite->data[6]].invisible = TRUE;
         gSprites[sprite->data[6]].data[1] = 1;
@@ -2231,7 +2231,7 @@ static void sub_813DE70(struct Sprite *sprite)
         r5 = gSprites[sprite->data[7]].x + gSprites[sprite->data[7]].x2;
         r4 = gSprites[sprite->data[7]].y + gSprites[sprite->data[7]].y2;
         DestroySprite(&gSprites[sprite->data[7]]);
-        sprite->data[7] = sub_813CE88(SPECIES_MUDKIP, r5, r4, 3, 1);
+        sprite->data[7] = sub_813CE88(SPECIES_JIGGLYPUFF, r5, r4, 3, 1);
         gSprites[sprite->data[7]].callback = sub_813DD58;
         gSprites[sprite->data[7]].invisible = TRUE;
         gSprites[sprite->data[7]].data[1] = 2;

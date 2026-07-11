@@ -4,7 +4,7 @@
 
 - Version: `v1.2`
 - Branch: `pokemon-lilac-baseline`
-- Source commit: `6d7d67c`
+- Source commit: `46c7e9d`
 - Output folder: `C:\Users\Paul\Documents\Codex\2026-07-04\we\outputs`
 
 ## Flash This For The Cartridge
@@ -31,10 +31,10 @@ Do not flash the normal `pokemon-lilac-ruby-v1.2.gba` build to this cart. That b
 
 | File | SHA256 |
 | --- | --- |
-| `pokemon-lilac-ruby-v1.2-sram.gba` | `DA09690EC6A17074C4F7D142D9E0C57D5AAA89009CF0D44BB85221D95D0264B9` |
-| `pokemon-lilac-ruby-v1.2-sram.ips` | `B5C5EFB6E437DC2341177A98AB7F8B3FF9F13BF9C591F25B5EA609E0264A49B4` |
-| `pokemon-lilac-ruby-v1.2.gba` | `1984DDFD9424E9FB9E43DA9FCE0CC48414BFCF4D5DF7C526434D1A8E65A3643F` |
-| `pokemon-lilac-ruby-v1.2.ips` | `55C25FD16E62D66789A87BF747A34057F058D79BD66560294832DD75D212F299` |
+| `pokemon-lilac-ruby-v1.2-sram.gba` | `57FEED58C47C957B930981E56FB4D8AEAB7B9F3C34E4A78FE9B12D9DD461ABAF` |
+| `pokemon-lilac-ruby-v1.2-sram.ips` | `4273E3A14B691C6582B5C797553E30D148F82903A48CBC62B9F2753229DB0C53` |
+| `pokemon-lilac-ruby-v1.2.gba` | `25A8AEDEDB114AA89D219302F19697F4C90B2932F780527E06BDE4D1286C5751` |
+| `pokemon-lilac-ruby-v1.2.ips` | `868E19A8D9B5C2CD1B1A438FD00EA148EF54C66E802332EA25F72E60796874F6` |
 
 ## Smoke Test
 
@@ -42,11 +42,11 @@ Do not flash the normal `pokemon-lilac-ruby-v1.2.gba` build to this cart. That b
 2. Confirm the title screen shows Pokemon Lilac Version with the Jigglypuff and music-note background.
 3. Start a new game and confirm the Birch intro uses the lilac spotlight.
 4. Let the intro movie play long enough to confirm the bike rider is May/Lizzy, not Brendan.
-5. Confirm the player route goes directly to the girl character/name selection.
-6. Confirm default names include `Lizzy`, `Liz`, `Lilac`, and `May`.
-7. Confirm the starter is Jigglypuff with `Sing` and `Pound`.
-8. Save once gameplay allows it, power cycle the cart, and confirm the save reloads.
-9. After the Pokedex sequence, confirm the lab gift grants the `Puzzle Piece`.
-10. Use the `Puzzle Piece` and confirm it says, `It fits perfectly.`
-11. Optional polish check: read the book in May's room and confirm it shows the custom story excerpt.
-
+5. Let the intro movie reach the battle sequence and confirm Jigglypuff/Igglybuff appear with lilac music-note attack effects.
+6. Confirm the player route goes directly to the girl character/name selection.
+7. Confirm default names include `Lizzy`, `Liz`, `Lilac`, and `Carlena`.
+8. Confirm the starter is Jigglypuff with `Sing` and `Pound`.
+9. Save once gameplay allows it, power cycle the cart, and confirm the save reloads.
+10. After the Pokedex sequence, confirm the lab gift grants the `Puzzle Piece`.
+11. Use the `Puzzle Piece` and confirm it says, `It fits perfectly.`
+12. Optional polish check: read the book in May's room and confirm it shows the custom story excerpt.

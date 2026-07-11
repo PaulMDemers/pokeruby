@@ -1374,14 +1374,14 @@ static void Task_IntroPokemonBattle(u8 taskId)
     if (gIntroFrameCounter == 624)
     {
         sub_813D084(0);
-        spriteId = sub_813CE88(SPECIES_MUDKIP, 0x20, 0x98, 0, 0);
+        spriteId = sub_813CE88(SPECIES_JIGGLYPUFF, 0x20, 0x98, 0, 0);
         gSprites[spriteId].callback = sub_813E210;
         gTasks[taskId].data[4] = spriteId;
         InitIntroMudkipAttackAnim(spriteId);
     }
     if (gIntroFrameCounter == 700)
     {
-        spriteId = sub_813CE88(SPECIES_TORCHIC, -8, 0x90, 1, 0);
+        spriteId = sub_813CE88(SPECIES_IGGLYBUFF, -8, 0x90, 1, 0);
         gSprites[spriteId].callback = sub_813E210;
         gTasks[taskId].data[5] = spriteId;
         InitIntroTorchicAttackAnim(spriteId);

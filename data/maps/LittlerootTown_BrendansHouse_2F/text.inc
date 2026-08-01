@@ -37,8 +37,7 @@ LittlerootTown_BrendansHouse_2F_Text_PaulNotebook::
 	.string "One hero has red hair and a purple\n"
 	.string "outfit, and looks an awful lot\l"
 	.string "like LIZ.\p"
-	.string "Beside her, a JIGGLYPUFF sings so\n"
-	.string "loudly it saves the day.$"
+	.string "Maybe that's just a coincidence.$"
 
 Common_Text_LookCloserAtMap: @ 817303D
 	.string "{PLAYER} took a closer look at the\n"

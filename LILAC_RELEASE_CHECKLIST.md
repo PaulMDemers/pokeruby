@@ -4,7 +4,7 @@
 
 - Version: `v1.2`
 - Branch: `pokemon-lilac-baseline`
-- Source commit: `13d3b14`
+- Source commit: `6805db8`
 - Output folder: `C:\Users\Paul\Documents\Codex\2026-07-04\we\outputs`
 
 ## Flash This For The Cartridge
@@ -31,10 +31,10 @@ Do not flash the normal `pokemon-lilac-ruby-v1.2.gba` build to this cart. That b
 
 | File | SHA256 |
 | --- | --- |
-| `pokemon-lilac-ruby-v1.2-sram.gba` | `5BC545571F5A74BB624580CE1DF032A75E62E242E733B27BB02D8E697576B851` |
-| `pokemon-lilac-ruby-v1.2-sram.ips` | `519EE311D3EA0363F926B5E99BCAF21B3C3A4078204A46BC8CB305708AEEC913` |
-| `pokemon-lilac-ruby-v1.2.gba` | `2FC2B708F2D4C1B71916ABB9536123DFE3A74F586E494154F8853E7A9A69AFC0` |
-| `pokemon-lilac-ruby-v1.2.ips` | `F696237A962A02915AC4DB606DA7D9CBBB2542F166FF8C27201052D0D8ECFC53` |
+| `pokemon-lilac-ruby-v1.2-sram.gba` | `77C1932D81FDDE617732F01A0AA57767725D15E4B0B84F917F2B80A768CDA8DD` |
+| `pokemon-lilac-ruby-v1.2-sram.ips` | `A007BB775CF4BE69074D000E298AE89642F41EB3EF283B14958EE027B5590805` |
+| `pokemon-lilac-ruby-v1.2.gba` | `75B20DDC6B55EBA7DEAA0BBE71B027B5EC9822D8589E37113162DE767E1CC60D` |
+| `pokemon-lilac-ruby-v1.2.ips` | `79220D2EF77D76FFF9AA5E9927204D739BFB14466D0C45D8A1057E4F662A6052` |
 
 ## Smoke Test
 
@@ -55,4 +55,8 @@ Do not flash the normal `pokemon-lilac-ruby-v1.2.gba` build to this cart. That b
 15. Optional polish check: confirm the GameCube says it is loaded with `Super Mario Sunshine`.
 16. Optional polish check: confirm Brendan-facing text and battles now call him `Paul`.
 17. Optional polish check: read Paul's notebook in his room and confirm it mentions comic drafts with a red-haired, purple-outfit hero who looks like Liz, maybe by coincidence.
-18. Optional encounter check: Route 101 and Route 103 grass encounters are level 2-3 `Butterfree` and `Beautifly`.
+18. Optional polish check: interact with the Jigglypuff doll in May's room and confirm it looks proud of the room.
+19. Optional polish check: talk to Mom after the TV sequence and confirm she mentions whether Lilacs can handle the soil.
+20. Optional polish check: confirm Paul's mom says he has been working on something all week.
+21. Optional polish check: confirm Birch's Puzzle Piece line says some things only make sense when they find where they belong.
+22. Optional route flavor check: Route 101 and Route 103 mention butterflies, and their grass encounters are level 2-3 `Butterfree` and `Beautifly`.

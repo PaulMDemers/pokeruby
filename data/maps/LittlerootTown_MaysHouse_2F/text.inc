@@ -83,3 +83,7 @@ LittlerootTown_MaysHouse_2F_Text_DespereauxBook::
 	.string "only one of his litter to be\l"
 	.string "born alive...\p"
 	.string "{PLAYER} closes the book carefully.$"
+
+LittlerootTown_MaysHouse_2F_Text_JigglypuffDoll::
+	.string "It's a JIGGLYPUFF doll.\p"
+	.string "It looks proud of the room.$"

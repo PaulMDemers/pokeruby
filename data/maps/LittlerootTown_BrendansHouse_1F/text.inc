@@ -46,7 +46,9 @@ PlayersHouse_1F_Text_SeeYouHoney:: @ 81726D2
 
 PlayersHouse_1F_Text_DidYouMeetProfBirch:: @ 81726E7
 	.string "MOM: Did you introduce yourself to\n"
-	.string "PROF. BIRCH?$"
+	.string "PROF. BIRCH?\p"
+	.string "I should check whether Lilacs can\n"
+	.string "handle the soil here.$"
 
 PlayersHouse_1F_Text_YouShouldRestABit:: @ 8172717
 	.string "MOM: How are you doing, {PLAYER}?\n"

@@ -997,7 +997,8 @@ static const u8 gItemDescription_ContestPass[] = _(
 
 static const u8 gItemDescription_PuzzlePiece[] = _(
     "The missing piece.\n"
-    "Keep it with you.");
+    "It belongs\n"
+    "somewhere.");
 
 static const u8 gItemDescription_WailmerPail[] = _(
     "A tool used for\n"

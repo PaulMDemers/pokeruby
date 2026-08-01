@@ -178,4 +178,5 @@ LittlerootTown_ProfessorBirchsLab_Text_OpenBirthdayPresent::
 LittlerootTown_ProfessorBirchsLab_Text_PuzzlePieceKeepIt::
 	.string "PROF. BIRCH: That's the missing\n"
 	.string "piece.\p"
-	.string "Keep it with you, okay?$"
+	.string "Some things only make sense\n"
+	.string "when they find where they belong.$"

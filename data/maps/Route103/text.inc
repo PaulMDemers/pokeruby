@@ -55,8 +55,8 @@ Route103_Text_16D856:: @ 816D856
 	.string "Dad will want to see this.$"
 
 Route103_Text_16D950:: @ 816D950
-	.string "My POKEMON is staggeringly tired...\n"
-	.string "I should have brought a POTION...$"
+	.string "The butterflies around here seem\n"
+	.string "drawn to new beginnings.$"
 
 Route103_Text_16D996:: @ 816D996
 	.string "If you cross the sea from here,\n"

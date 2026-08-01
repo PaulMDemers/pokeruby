@@ -6,8 +6,8 @@ RivalsHouse_1F_Text_OhYoureTheNewNeighbor:: @ 81730C2
 	.string "neighbor! Hi!\p"
 	.string "We have a {STR_VAR_1} about the same\n"
 	.string "age as you.\p"
-	.string "Our {STR_VAR_1} has been helping with\n"
-	.string "a special errand for PROF. BIRCH.\p"
+	.string "Our {STR_VAR_1} has been working on\n"
+	.string "something all week.\p"
 	.string "Our {STR_VAR_1} is upstairs, I think.$"
 
 RivalsHouse_1F_Text_RivalIsUpstairsIThink:: @ 81731C6

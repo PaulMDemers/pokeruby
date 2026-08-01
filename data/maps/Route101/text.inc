@@ -30,10 +30,10 @@ Route101_Text_16D25E:: @ 816D25E
 	.string "TOWN right close by.$"
 
 Route101_Text_16D2CB:: @ 816D2CB
-	.string "Wild POKEMON will jump out at you in\n"
-	.string "tall grass.\p"
-	.string "If you want to catch POKEMON, you have\n"
-	.string "to go into the tall grass and search.$"
+	.string "Butterfree and Beautifly keep\n"
+	.string "visiting the flowers today.\p"
+	.string "Tall grass is where little surprises\n"
+	.string "like that tend to appear.$"
 
 Route101_Text_16D349:: @ 816D349
 	.string "ROUTE 101\n"

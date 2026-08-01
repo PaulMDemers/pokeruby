@@ -221,3 +221,7 @@ gMayHouse_TurnPCOff:: @ 8152C75
 LittlerootTown_MaysHouse_2F_EventScript_DespereauxBook::
 	msgbox LittlerootTown_MaysHouse_2F_Text_DespereauxBook, MSGBOX_SIGN
 	end
+
+LittlerootTown_MaysHouse_2F_EventScript_JigglypuffDoll::
+	msgbox LittlerootTown_MaysHouse_2F_Text_JigglypuffDoll, MSGBOX_NPC
+	end

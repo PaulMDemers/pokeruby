@@ -22,24 +22,23 @@ PlayersHouse_1F_Text_GoSetTheClock:: @ 8172574
 	.string "Go set the clock in your room, honey.$"
 
 PlayersHouse_1F_Text_OhComeQuickly:: @ 81725A3
-	.string "MOM: Oh! {PLAYER}, {PLAYER}!\n"
-	.string "Quick! Come quickly!$"
+	.string "MOM: Oh! {PLAYER}, come quickly!\n"
+	.string "The gardening show is starting!$"
 
 PlayersHouse_1F_Text_MaybeDadWillBeOn:: @ 81725C9
-	.string "MOM: Look! It's PETALBURG GYM!\n"
-	.string "Maybe DAD will be on!$"
+	.string "MOM: Look at those flower beds!\n"
+	.string "They planted LILACS by the door!$"
 
 PlayersHouse_1F_Text_ItsOverWeMissedHim:: @ 81725FE
 	.string "MOM: Oh... It's over.\p"
-	.string "I think DAD was on, but we missed him.\n"
-	.string "Too bad.$"
+	.string "Those LILACS were lovely!\n"
+	.string "Maybe we should plant some here.$"
 
 PlayersHouse_1F_Text_GoIntroduceYourselfNextDoor:: @ 8172644
 	.string "Oh, yes.\n"
-	.string "One of DAD's friends lives in town.\p"
-	.string "PROF. BIRCH is his name.\p"
-	.string "He lives right next door, so you should\n"
-	.string "go over and introduce yourself.\p"
+	.string "PROF. BIRCH lives right next door.\p"
+	.string "You should go over and introduce\n"
+	.string "yourself.\p"
 	.string "He sounded very excited about today.$"
 
 PlayersHouse_1F_Text_SeeYouHoney:: @ 81726D2
@@ -73,8 +72,8 @@ PlayersHouse_1F_Text_Machoke2:: @ 8172831
 	.string "Gwagwah gwah...$"
 
 PlayersHouse_1F_Text_ReportFromPetalburgGym:: @ 8172841
-	.string "INTERVIEWER: ...We brought you this\n"
-	.string "report from in front of PETALBURG GYM.$"
+	.string "HOST: ...And that is how you help\n"
+	.string "LILACS settle into a new garden.$"
 
 PlayersHouse_1F_Text_TheresAMovieOnTV: @ 817288C
 	.string "There is a movie on TV.\p"

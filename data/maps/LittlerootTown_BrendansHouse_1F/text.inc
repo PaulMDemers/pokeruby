@@ -27,11 +27,11 @@ PlayersHouse_1F_Text_OhComeQuickly:: @ 81725A3
 
 PlayersHouse_1F_Text_MaybeDadWillBeOn:: @ 81725C9
 	.string "MOM: Look at those flower beds!\n"
-	.string "They planted LILACS by the door!$"
+	.string "They planted Lilacs by the door!$"
 
 PlayersHouse_1F_Text_ItsOverWeMissedHim:: @ 81725FE
 	.string "MOM: Oh... It's over.\p"
-	.string "Those LILACS were lovely!\n"
+	.string "Those Lilacs were lovely!\n"
 	.string "Maybe we should plant some here.$"
 
 PlayersHouse_1F_Text_GoIntroduceYourselfNextDoor:: @ 8172644
@@ -73,7 +73,7 @@ PlayersHouse_1F_Text_Machoke2:: @ 8172831
 
 PlayersHouse_1F_Text_ReportFromPetalburgGym:: @ 8172841
 	.string "HOST: ...And that is how you help\n"
-	.string "LILACS settle into a new garden.$"
+	.string "Lilacs settle into a new garden.$"
 
 PlayersHouse_1F_Text_TheresAMovieOnTV: @ 817288C
 	.string "There is a movie on TV.\p"

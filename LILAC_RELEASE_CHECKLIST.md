@@ -4,7 +4,7 @@
 
 - Version: `v1.2`
 - Branch: `pokemon-lilac-baseline`
-- Source commit: `fc41dff`
+- Source commit: `5fd92f9`
 - Output folder: `C:\Users\Paul\Documents\Codex\2026-07-04\we\outputs`
 
 ## Flash This For The Cartridge
@@ -31,10 +31,10 @@ Do not flash the normal `pokemon-lilac-ruby-v1.2.gba` build to this cart. That b
 
 | File | SHA256 |
 | --- | --- |
-| `pokemon-lilac-ruby-v1.2-sram.gba` | `02658C7C3AF68B006325A348AD90F2BB2BCF93D8DDC3D0D131A6C158351BC382` |
-| `pokemon-lilac-ruby-v1.2-sram.ips` | `5E03148353E2EF7ED867428667D0AB0884B706CB686110D73D351FA57F8229BA` |
-| `pokemon-lilac-ruby-v1.2.gba` | `AD5A92386F57C7480D301F4C8BE44602EA059DE35B552D8A0844BE01AAB1E5DB` |
-| `pokemon-lilac-ruby-v1.2.ips` | `B9724C9E30D1562F3A280C7CB27369AEEA9791D68AB7FCA0F5CAF02CE24A8438` |
+| `pokemon-lilac-ruby-v1.2-sram.gba` | `7AEEEB8EA52199162E0F49E86FE4BBC6D6C4C98190F0280167FB1DDE702913A0` |
+| `pokemon-lilac-ruby-v1.2-sram.ips` | `C23BFE1D2597BE3853DCEA4BF0082E022316FAA8AEED5A793851F9B65DB735E9` |
+| `pokemon-lilac-ruby-v1.2.gba` | `576EF6529CE63C29358E4365D15345B8FCB68FDD03450274166339C773644ED6` |
+| `pokemon-lilac-ruby-v1.2.ips` | `8745D4F331B69E0BB64AFFD018707CFE2C5D67CF06D81F2DD8558AF7765E50B7` |
 
 ## Smoke Test
 
@@ -50,3 +50,4 @@ Do not flash the normal `pokemon-lilac-ruby-v1.2.gba` build to this cart. That b
 10. After the Pokedex sequence, confirm the lab gift grants the `Puzzle Piece`.
 11. Use the `Puzzle Piece` and confirm it says, `It fits perfectly.`
 12. Optional polish check: read the book in May's room and confirm it shows the custom story excerpt.
+13. Optional encounter check: Route 101 and Route 102 grass encounters are level 2-3 `Butterfree` and `Beautifly`.

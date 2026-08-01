@@ -876,7 +876,7 @@ static void CB2_GiveStarter(void)
 
     *GetVarPointer(VAR_STARTER_MON) = gSpecialVar_Result;
     starterPoke = GetStarterPokemon(gSpecialVar_Result);
-    ScriptGiveMon(starterPoke, 5, ITEM_NONE, 0, 0, 0);
+    ScriptGiveMon(starterPoke, 5, ITEM_ORAN_BERRY, 0, 0, 0);
     GiveMoveToMon(&gPlayerParty[0], MOVE_POUND);
     ResetTasks();
     sub_80408BC();

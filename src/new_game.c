@@ -3,6 +3,7 @@
 #include "battle_records.h"
 #include "berry.h"
 #include "clock.h"
+#include "constants/items.h"
 #include "constants/maps.h"
 #include "constants/species.h"
 #include "contest.h"
@@ -12,6 +13,7 @@
 #include "easy_chat.h"
 #include "event_data.h"
 #include "field_specials.h"
+#include "item.h"
 #include "item_menu.h"
 #include "lottery_corner.h"
 #include "mail_data.h"
@@ -193,6 +195,7 @@ void NewGameInitData(void)
     ClearRoamerLocationData();
     gSaveBlock1.registeredItem = 0;
     ClearBag();
+    AddBagItem(ITEM_POTION, 1);
     NewGameInitPCItems();
     ClearPokeblocks();
     ClearDecorationInventories();

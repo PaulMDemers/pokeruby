@@ -128,7 +128,7 @@ LittlerootTown_ProfessorBirchsLab_Text_MayWhereShouldIGoNext:: @ 8174505
 	.string "for POKEMON next?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanGotPokedexTooTakeThese:: @ 817453C
-	.string "BRENDAN: Huh...\n"
+	.string "PAUL: Huh...\n"
 	.string "So you got a POKEDEX, too.\p"
 	.string "Dad really did have something special\n"
 	.string "planned for you.\p"
@@ -136,7 +136,7 @@ LittlerootTown_ProfessorBirchsLab_Text_BrendanGotPokedexTooTakeThese:: @ 817453C
 	.string "I'll give you these.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CatchCoolPokemonWithPokeBalls:: @ 817458C
-	.string "BRENDAN: You know it's more fun to\n"
+	.string "PAUL: You know it's more fun to\n"
 	.string "have a whole bunch of POKEMON.\p"
 	.string "I'm going to explore all over the place\n"
 	.string "to find different POKEMON.\p"
@@ -147,7 +147,7 @@ LittlerootTown_ProfessorBirchsLab_Text_HeyYourBagsFull:: @ 817465B
 	.string "Hey, your BAG's full.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanWhereShouldIGoNext:: @ 8174671
-	.string "BRENDAN: Where should I look for\n"
+	.string "PAUL: Where should I look for\n"
 	.string "POKEMON next...$"
 
 LittlerootTown_ProfessorBirchsLab_Text_SeriousLookingMachine:: @ 81746A2

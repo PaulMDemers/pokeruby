@@ -20,7 +20,7 @@ LavaridgeTown_Text_MayExplainGoGogglesChallengeDad:: @ 816BE7D
 	.string "{PLAYER}{KUN}, see you again!$"
 
 LavaridgeTown_Text_BrendanNiceBadgesTakeThis:: @ 816BF92
-	.string "BRENDAN: {PLAYER}, hey, it's been a while.\n"
+	.string "PAUL: {PLAYER}, hey, it's been a while.\n"
 	.string "How's it going?\p"
 	.string "Hmm...\n"
 	.string "That's a decent collection of BADGES.\p"
@@ -28,7 +28,7 @@ LavaridgeTown_Text_BrendanNiceBadgesTakeThis:: @ 816BF92
 	.string "You may as well have this.$"
 
 LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad:: @ 816C020
-	.string "BRENDAN: Keep those with you if you're\n"
+	.string "PAUL: Keep those with you if you're\n"
 	.string "planning on going into that desert near\l"
 	.string "ROUTE 111.\p"
 	.string "There should be some POKéMON that\n"

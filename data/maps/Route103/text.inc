@@ -26,7 +26,7 @@ Route103_Text_16D688:: @ 816D688
 	.string "LAB.$"
 
 Route103_Text_16D762:: @ 816D762
-	.string "BRENDAN: Okay, so it's this one and\n"
+	.string "PAUL: Okay, so it's this one and\n"
 	.string "that one that live on ROUTE 103...$"
 
 Route103_Text_16D7A9:: @ 816D7A9
@@ -44,7 +44,7 @@ Route103_Text_16D836:: @ 816D836
 	.string "Huh, {PLAYER}, you're not too shabby.$"
 
 Route103_Text_16D856:: @ 816D856
-	.string "BRENDAN: I think I get it.\n"
+	.string "PAUL: I think I get it.\n"
 	.string "I think I know why Dad had his eye\l"
 	.string "out for you now.\p"
 	.string "Look, your JIGGLYPUFF already trusts\n"

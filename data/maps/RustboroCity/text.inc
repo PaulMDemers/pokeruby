@@ -127,7 +127,7 @@ RustboroCity_Text_MayMrBrineyHint:: @ 816713C
 	.string "was once a revered seafarer.$"
 
 RustboroCity_Text_BrendanHiHowsPokedexComing:: @ 8167213
-	.string "BRENDAN: {PLAYER}, how's your POKéDEX?\n"
+	.string "PAUL: {PLAYER}, how's your POKéDEX?\n"
 	.string "Have you filled in any pages yet?\p"
 	.string "Mine rules.\p"
 	.string "I went on a POKéMON-catching frenzy\n"
@@ -135,7 +135,7 @@ RustboroCity_Text_BrendanHiHowsPokedexComing:: @ 8167213
 	.string "of POKé BALLS.$"
 
 RustboroCity_Text_BrendanMrBrineyHint:: @ 81672B8
-	.string "BRENDAN: By the way, I walked by MR.\n"
+	.string "PAUL: By the way, I walked by MR.\n"
 	.string "BRINEY in PETALBURG WOODS.\p"
 	.string "I bet he was on his way home to his\n"
 	.string "cottage by the sea.\p"

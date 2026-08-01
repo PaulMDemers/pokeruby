@@ -30,11 +30,21 @@ PlayersHouse_2F_Text_Notebook:: @ 8172F9A
 	.string "Record your progress with SAVE.\p"
 	.string "A lilac bookmark marks a blank page.$"
 
+LittlerootTown_BrendansHouse_2F_Text_PaulNotebook::
+	.string "{PLAYER} flipped open PAUL's\n"
+	.string "notebook.\p"
+	.string "Comic drafts fill the pages.\p"
+	.string "One hero has red hair and a purple\n"
+	.string "outfit, and looks an awful lot\l"
+	.string "like LIZ.\p"
+	.string "Beside her, a JIGGLYPUFF sings so\n"
+	.string "loudly it saves the day.$"
+
 Common_Text_LookCloserAtMap: @ 817303D
 	.string "{PLAYER} took a closer look at the\n"
 	.string "HOENN region map.$"
 
 PlayersHouse_2F_Text_ItsAGameCube:: @ 817306C
 	.string "It's a Nintendo GameCube.\p"
-	.string "A Game Boy Advance is connected to\n"
-	.string "serve as the Controller.$"
+	.string "It's loaded with SUPER MARIO\n"
+	.string "SUNSHINE.$"

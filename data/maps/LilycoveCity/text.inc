@@ -69,7 +69,7 @@ LilycoveCity_Text_MayYouGoingToBattleTower:: @ 8167EAA
 	.string "See you!$"
 
 LilycoveCity_Text_BrendanShoppingLetsBattle:: @ 8167F75
-	.string "BRENDAN: Oh, hey, it's {PLAYER}.\p"
+	.string "PAUL: Oh, hey, it's {PLAYER}.\p"
 	.string "I'm running an errand for my dad.\n"
 	.string "No, I'm not buying any DOLLS.\p"
 	.string "Anyways, it's been a while.\p"
@@ -77,15 +77,15 @@ LilycoveCity_Text_BrendanShoppingLetsBattle:: @ 8167F75
 	.string "raising POKéMON better?$"
 
 LilycoveCity_Text_BrendanNoConfidence:: @ 816802C
-	.string "BRENDAN: Oh, what's the matter?\n"
+	.string "PAUL: Oh, what's the matter?\n"
 	.string "Don't have the confidence?$"
 
 LilycoveCity_Text_BrendanBattleMe:: @ 8168067
-	.string "BRENDAN: Want to battle to see who's\n"
+	.string "PAUL: Want to battle to see who's\n"
 	.string "been raising POKéMON better?$"
 
 LilycoveCity_Text_BrendanWontBeBeaten:: @ 81680A9
-	.string "BRENDAN: Aww, but you know I'm not\n"
+	.string "PAUL: Aww, but you know I'm not\n"
 	.string "going to lose to no {PLAYER}.$"
 
 LilycoveCity_Text_BrendanDefeat:: @ 81680E4
@@ -95,7 +95,7 @@ LilycoveCity_Text_BrendanDefeat:: @ 81680E4
 	.string "on you as a TRAINER...$"
 
 LilycoveCity_Text_BrendanGoingBackToLittleroot:: @ 8168149
-	.string "BRENDAN: I...\n"
+	.string "PAUL: I...\n"
 	.string "I plan on going home to LITTLEROOT.\p"
 	.string "You know I'm helping out my dad on his\n"
 	.string "POKéDEX. It's coming together pretty\l"

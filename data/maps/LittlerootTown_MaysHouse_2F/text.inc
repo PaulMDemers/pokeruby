@@ -27,7 +27,7 @@ RivalsHouse_2F_Text_BrendanWhoAreYou:: @ 81735FC
 	.string "Hey!\n"
 	.string "You must be {PLAYER}!\p"
 	.string "You moved in next door today, right?\n"
-	.string "I'm BRENDAN.\p"
+	.string "I'm PAUL.\p"
 	.string "Dad, PROF. BIRCH, told me you were\n"
 	.string "coming.\p"
 	.string "He asked me to help with something\n"
@@ -54,7 +54,7 @@ RivalsHouse_2F_Text_MayWhereShouldIGoNext:: @ 8173883
 	.string "other, {PLAYER}{KUN}?$"
 
 RivalsHouse_2F_Text_BrendanJustCheckingMyPokedex:: @ 81738F2
-	.string "BRENDAN: Hey, it's {PLAYER}.\p"
+	.string "PAUL: Hey, it's {PLAYER}.\p"
 	.string "I was just checking out my POKEDEX.\p"
 	.string "There are still many POKEMON that\n"
 	.string "I need to catch.\p"
@@ -62,7 +62,7 @@ RivalsHouse_2F_Text_BrendanJustCheckingMyPokedex:: @ 81738F2
 	.string "the urge to hit the road again.$"
 
 RivalsHouse_2F_Text_BrendanWhereShouldIGoNext:: @ 81739CC
-	.string "BRENDAN: I'm having a hard time deciding\n"
+	.string "PAUL: I'm having a hard time deciding\n"
 	.string "where I should catch POKEMON next.\p"
 	.string "Hey, {PLAYER}, if I see you while I'm out\n"
 	.string "catching POKEMON, I can pitch you a\l"

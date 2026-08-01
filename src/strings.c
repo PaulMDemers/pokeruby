@@ -15,7 +15,7 @@ const u8 gExpandedPlaceholder_Archie[] = _("ARCHIE");
 const u8 gExpandedPlaceholder_Maxie[] = _("MAXIE");
 const u8 gExpandedPlaceholder_Kyogre[] = _("KYOGRE");
 const u8 gExpandedPlaceholder_Groudon[] = _("GROUDON");
-const u8 gExpandedPlaceholder_Brendan[] = _("BRENDAN");
+const u8 gExpandedPlaceholder_Brendan[] = _("PAUL");
 const u8 gExpandedPlaceholder_May[] = _("MAY");
 
 // system text

@@ -82,6 +82,10 @@ PlayersHouse_2F_EventScript_Notebook:: @ 8152867
 	msgbox PlayersHouse_2F_Text_Notebook, MSGBOX_SIGN
 	end
 
+LittlerootTown_BrendansHouse_2F_EventScript_PaulNotebook::
+	msgbox LittlerootTown_BrendansHouse_2F_Text_PaulNotebook, MSGBOX_SIGN
+	end
+
 PlayersHouse_2F_EventScript_GameCube:: @ 8152870
 	msgbox PlayersHouse_2F_Text_ItsAGameCube, MSGBOX_SIGN
 	end

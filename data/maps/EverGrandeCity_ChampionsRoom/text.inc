@@ -41,12 +41,12 @@ EverGrandeCity_ChampionsRoom_Text_MayItsAlreadyOver:: @ 8191268
 	.string "It's already over?$"
 
 EverGrandeCity_ChampionsRoom_Text_BrendanAdvice:: @ 81912B3
-	.string "BRENDAN: {PLAYER}!\p"
+	.string "PAUL: {PLAYER}!\p"
 	.string "How would you like some advice before\n"
 	.string "you challenge the CHAMPION?...$"
 
 EverGrandeCity_ChampionsRoom_Text_BrendanYouveWon:: @ 8191305
-	.string "BRENDAN: {PLAYER}...\p"
+	.string "PAUL: {PLAYER}...\p"
 	.string "Are you trying to tell me...\n"
 	.string "You've beaten the CHAMPION?$"
 
@@ -93,7 +93,7 @@ EverGrandeCity_ChampionsRoom_Text_MayCongratulations:: @ 81915D7
 	.string "Honestly, congratulations!$"
 
 EverGrandeCity_ChampionsRoom_Text_BrendanCongratulations:: @ 8191675
-	.string "BRENDAN: ... ... ... ... ... ...\n"
+	.string "PAUL: ... ... ... ... ... ...\n"
 	.string "... ... ... ... ... ... ... ...\p"
 	.string "It can't be helped if that's the rule.\p"
 	.string "{PLAYER}, way to go!\n"

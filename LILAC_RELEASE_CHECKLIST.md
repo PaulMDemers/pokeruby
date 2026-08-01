@@ -4,7 +4,7 @@
 
 - Version: `v1.2`
 - Branch: `pokemon-lilac-baseline`
-- Source commit: `8df0db6`
+- Source commit: `5396c82`
 - Output folder: `C:\Users\Paul\Documents\Codex\2026-07-04\we\outputs`
 
 ## Flash This For The Cartridge
@@ -31,10 +31,10 @@ Do not flash the normal `pokemon-lilac-ruby-v1.2.gba` build to this cart. That b
 
 | File | SHA256 |
 | --- | --- |
-| `pokemon-lilac-ruby-v1.2-sram.gba` | `420DFC2644EE476DCB4F60B3F84873986032E22A6D2B0F395B74A104E51CF348` |
-| `pokemon-lilac-ruby-v1.2-sram.ips` | `A22904080DF696FC149209651C80420A5DE653B43B7B72C3C0A01FB22F755ADD` |
-| `pokemon-lilac-ruby-v1.2.gba` | `953419FD01A2A4FB051AAEE38347CCED70103022E32212A720DA42206AE0B89A` |
-| `pokemon-lilac-ruby-v1.2.ips` | `B2DE15579DB7F143435BCB544A8A7EAC11C81C040AAC8AB2C2F6DEDB3939E2CF` |
+| `pokemon-lilac-ruby-v1.2-sram.gba` | `C8436CEB26963117413DA3A08911954304B0D41F3BF23ED1219F849390B377D5` |
+| `pokemon-lilac-ruby-v1.2-sram.ips` | `9A4DAA09993EAC5CCE84DAF38FDF662CEB02614BDBE844636A3E54FCEC46E5AA` |
+| `pokemon-lilac-ruby-v1.2.gba` | `3E8C3BB218D3E6054B9F1BE6FA2207BE79258528DB215652713523A11844561E` |
+| `pokemon-lilac-ruby-v1.2.ips` | `7B7E062C130727C64911AD56E198865C48C3A79930EB596311C8F03C7A523AF6` |
 
 ## Smoke Test
 
@@ -46,12 +46,13 @@ Do not flash the normal `pokemon-lilac-ruby-v1.2.gba` build to this cart. That b
 6. Confirm the player route goes directly to the girl character/name selection.
 7. Confirm default names include `Lizzy`, `Liz`, `Lilac`, and `Carlena`.
 8. Confirm the starter is Jigglypuff with `Sing`, `Pound`, and a held `Oran Berry`.
-9. Save once gameplay allows it, power cycle the cart, and confirm the save reloads.
-10. After the Pokedex sequence, confirm the lab gift grants the `Puzzle Piece`.
-11. Use the `Puzzle Piece` and confirm it says, `It fits perfectly.`
-12. Optional polish check: read the book in May's room and confirm it shows the custom story excerpt.
-13. Optional polish check: confirm the player starts with one `Potion`.
-14. Optional polish check: confirm the GameCube says it is loaded with `Super Mario Sunshine`.
-15. Optional polish check: confirm Brendan-facing text and battles now call him `Paul`.
-16. Optional polish check: read Paul's notebook in his room and confirm it mentions comic drafts with a red-haired, purple-outfit hero who looks like Liz, maybe by coincidence.
-17. Optional encounter check: Route 101 and Route 103 grass encounters are level 2-3 `Butterfree` and `Beautifly`.
+9. Confirm the opening TV sequence is about Mom being excited by a gardening show with lilacs.
+10. Save once gameplay allows it, power cycle the cart, and confirm the save reloads.
+11. After the Pokedex sequence, confirm the lab gift grants the `Puzzle Piece`.
+12. Use the `Puzzle Piece` and confirm it says, `It fits perfectly.`
+13. Optional polish check: read the book in May's room and confirm it shows the custom story excerpt.
+14. Optional polish check: confirm the player starts with one `Potion`.
+15. Optional polish check: confirm the GameCube says it is loaded with `Super Mario Sunshine`.
+16. Optional polish check: confirm Brendan-facing text and battles now call him `Paul`.
+17. Optional polish check: read Paul's notebook in his room and confirm it mentions comic drafts with a red-haired, purple-outfit hero who looks like Liz, maybe by coincidence.
+18. Optional encounter check: Route 101 and Route 103 grass encounters are level 2-3 `Butterfree` and `Beautifly`.

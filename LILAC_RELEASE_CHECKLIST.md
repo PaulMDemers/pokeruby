@@ -2,7 +2,7 @@
 
 ## Release
 
-- Version: `v1.2`
+- Version: `v1.3`
 - Branch: `pokemon-lilac-baseline`
 - Source commit: `fd879ec`
 - Output folder: `C:\Users\Paul\Documents\Codex\2026-07-04\we\outputs`
@@ -11,7 +11,7 @@
 
 Use this ROM for the physical birthday cartridge:
 
-- `pokemon-lilac-ruby-v1.2-sram.gba`
+- `pokemon-lilac-ruby-v1.3-sram.gba`
 
 Target cart profile:
 
@@ -25,20 +25,20 @@ Verification:
 - SRAM build contains `SRAM_V`
 - SRAM build does not contain `FLASH1M`
 
-Do not flash the normal `pokemon-lilac-ruby-v1.2.gba` build to this cart. That build keeps the stock Flash save signature for emulator and patch testing.
+Do not flash the normal `pokemon-lilac-ruby-v1.3.gba` build to this cart. That build keeps the stock Flash save signature for emulator and patch testing.
 
 ## Artifacts
 
 | File | SHA256 |
 | --- | --- |
-| `pokemon-lilac-ruby-v1.2-sram.gba` | `58318C3C98608E961FBADECD9E74E0DBB59777CD16D9297F680D0D00ED2B115D` |
-| `pokemon-lilac-ruby-v1.2-sram.ips` | `3A1F002FCEC56981DA5711DB4A90EC0AB6843CD1D41C563222F376D99AE0AA83` |
-| `pokemon-lilac-ruby-v1.2.gba` | `6A4BF312FD67934FE6EE198880B8AFCDD955F6A7B6521745BCF7C357BC09D50E` |
-| `pokemon-lilac-ruby-v1.2.ips` | `69602ED8F5ED6F67548BF7E6D56D2DC89BE1FA2456D180EA9934564624C7A8CA` |
+| `pokemon-lilac-ruby-v1.3-sram.gba` | `58318C3C98608E961FBADECD9E74E0DBB59777CD16D9297F680D0D00ED2B115D` |
+| `pokemon-lilac-ruby-v1.3-sram.ips` | `3A1F002FCEC56981DA5711DB4A90EC0AB6843CD1D41C563222F376D99AE0AA83` |
+| `pokemon-lilac-ruby-v1.3.gba` | `6A4BF312FD67934FE6EE198880B8AFCDD955F6A7B6521745BCF7C357BC09D50E` |
+| `pokemon-lilac-ruby-v1.3.ips` | `69602ED8F5ED6F67548BF7E6D56D2DC89BE1FA2456D180EA9934564624C7A8CA` |
 
 ## Smoke Test
 
-1. Boot `pokemon-lilac-ruby-v1.2-sram.gba` on the flashcart.
+1. Boot `pokemon-lilac-ruby-v1.3-sram.gba` on the flashcart.
 2. Confirm the title screen shows Pokemon Lilac Version with the Jigglypuff and music-note background.
 3. Start a new game and confirm the Birch intro uses the lilac spotlight.
 4. Let the intro movie play long enough to confirm the bike rider is May/Lizzy, not Brendan.

@@ -4,7 +4,7 @@
 
 - Version: `v1.2`
 - Branch: `pokemon-lilac-baseline`
-- Source commit: `fc8820a`
+- Source commit: `fd879ec`
 - Output folder: `C:\Users\Paul\Documents\Codex\2026-07-04\we\outputs`
 
 ## Flash This For The Cartridge
@@ -31,10 +31,10 @@ Do not flash the normal `pokemon-lilac-ruby-v1.2.gba` build to this cart. That b
 
 | File | SHA256 |
 | --- | --- |
-| `pokemon-lilac-ruby-v1.2-sram.gba` | `3D465D1864568E6026ACB0676D140E370EC40338FE0997BAFAF96834DA5609BC` |
-| `pokemon-lilac-ruby-v1.2-sram.ips` | `C82ED0215E91C941B878D7666EE2B3D310D0899B8E01C0ABA42E6AB4F9661262` |
-| `pokemon-lilac-ruby-v1.2.gba` | `079DA64910EAC9BEEFAF20AFECD696D54164170FB55E8DE43D40E38ADCAA8498` |
-| `pokemon-lilac-ruby-v1.2.ips` | `019176B651CA44720D776B3682332141A6029C023FEDAC3FB97105AD1244D632` |
+| `pokemon-lilac-ruby-v1.2-sram.gba` | `58318C3C98608E961FBADECD9E74E0DBB59777CD16D9297F680D0D00ED2B115D` |
+| `pokemon-lilac-ruby-v1.2-sram.ips` | `3A1F002FCEC56981DA5711DB4A90EC0AB6843CD1D41C563222F376D99AE0AA83` |
+| `pokemon-lilac-ruby-v1.2.gba` | `6A4BF312FD67934FE6EE198880B8AFCDD955F6A7B6521745BCF7C357BC09D50E` |
+| `pokemon-lilac-ruby-v1.2.ips` | `69602ED8F5ED6F67548BF7E6D56D2DC89BE1FA2456D180EA9934564624C7A8CA` |
 
 ## Smoke Test
 

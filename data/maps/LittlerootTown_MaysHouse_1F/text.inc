@@ -8,7 +8,7 @@ RivalsHouse_1F_Text_OhYoureTheNewNeighbor:: @ 81730C2
 	.string "age as you.\p"
 	.string "Our {STR_VAR_1} has been working on\n"
 	.string "something all week.\p"
-	.string "Our {STR_VAR_1} is upstairs, I think.$"
+	.string "He's upstairs, I think.$"
 
 RivalsHouse_1F_Text_RivalIsUpstairsIThink:: @ 81731C6
 	.string "Our {STR_VAR_1} is upstairs, I think.$"

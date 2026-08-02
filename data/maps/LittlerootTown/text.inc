@@ -41,7 +41,7 @@ LittlerootTown_Text_ComeHomeIfAnythingHappens:: @ 816AB10
 	.string "... ... ... ... ... ... ... ...\p"
 	.string "To think that you have your very own\n"
 	.string "POKEMON now...\l"
-	.string "Your father will be overjoyed.\p"
+	.string "Good luck on your adventure.\p"
 	.string "And on a day like today, too...\n"
 	.string "What a wonderful beginning.\p"
 	.string "But please be careful.\n"
